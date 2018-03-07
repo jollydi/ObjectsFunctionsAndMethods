@@ -36,6 +36,7 @@ def main():
     turtle3()
     turtle2()
     turtle2()
+    turtle5()
 
     window.close_on_mouse_click()
 
@@ -131,7 +132,7 @@ def turtle5():
     bob.speed = 10
     joe.speed = 10
     bob.pen = rg.Pen('tomato',15)
-    joe.pen = rg.Pen('black')
+    joe.pen = rg.Pen('black',15)
 
     bob.draw_circle(175)
     joe.draw_regular_polygon(3,200)
@@ -217,7 +218,7 @@ def turtle5():
 
 ###############################################################################
 #
-# TODO: 6.
+# DONE: 6.
 #   The previous two TODOs IMPLEMENTED a function (TO-DO 4)
 #   and TESTED that function (TO-DO 5).
 #
@@ -244,7 +245,7 @@ def turtle5():
 
 ###############################################################################
 #
-# TODO: 7.
+# DONE: 7.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
