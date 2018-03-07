@@ -3,12 +3,12 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Isaiah Jolly.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -32,6 +32,7 @@ def main():
     window = rg.TurtleWindow()
 
     turtle1()
+    turtle4()
     turtle3()
     turtle2()
     turtle2()
@@ -100,13 +101,45 @@ def turtle3():
     maja.forward(300)
 
     maja.begin_fill()
+
     maja.draw_circle(50)
     maja.end_fill()
 
 
+def turtle4():
+    """""
+    Constructs a default SimpleTurtle.
+    Makes the SimpleTurtle go forward 200 units,
+    turn right 135 degrees, and then go back 350 units.
+    """
+    steve = rg.SimpleTurtle()
+    steve.speed = 7
+    steve.pen = rg.Pen('steel blue',15)
+
+    steve.forward(200)
+    steve.right(135)
+    steve.backward(350)
+
+
+def turtle5():
+    """""
+    Constructs two default SimpleTurtles.
+    Makes one draw a black triangle and the other draw a red circle.
+    """
+    bob = rg.SimpleTurtle()
+    joe = rg.SimpleTurtle()
+    bob.speed = 10
+    joe.speed = 10
+    bob.pen = rg.Pen('tomato',15)
+    joe.pen = rg.Pen('black')
+
+    bob.draw_circle(175)
+    joe.draw_regular_polygon(3,200)
+
+
 ###############################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
@@ -138,7 +171,7 @@ def turtle3():
 
 ###############################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -168,7 +201,7 @@ def turtle3():
 
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
